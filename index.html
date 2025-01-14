@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Valores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo del largo de desarrollo</h1>
+        <div class="row">
+            <label for="tipo">Tipo de barra</label>
+            <input type="text" id="tipo" placeholder="Ingresar Valor" value="corrugado">
+        </div>
+        <div class="row">
+            <label for="diam">Diámetro de barra [mm]</label>
+            <select id="diam">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="22">22</option>
+                <option value="25">25</option>
+                <option value="36">36</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="fy">Fy [MPa]</label>
+            <input type="number" id="fy" placeholder="Ingresar Valor" value="420">
+        </div>
+        <div class="row">
+            <label for="fc">f'c [MPa]</label>
+            <input type="number" id="fc" placeholder="Ingresar Valor" value="30">
+        </div>
+        <div class="row">
+            <label for="spac">Espaciamiento [mm]</label>
+            <input type="number" id="spac" placeholder="Ingresar Valor" value="200">
+        </div>
+        <div class="row">
+            <label for="rec">Recubrimiento [mm]</label>
+            <input type="number" id="rec" placeholder="Ingresar Valor" value="50">
+        </div>
+        <div class="row">
+            <label for="nbar">Número de barras</label>
+            <input type="number" id="nbar" placeholder="Ingresar Valor" value="2">
+        </div>
+        <div class="row">
+            <button onclick="enviarDatos()">Calcular</button>
+        </div>
+        <p id="l_d"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
